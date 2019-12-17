@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link href="%PUBLIC_URL%/css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="%PUBLIC_URL%/css/fontawesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+    <title>My Blog</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="text/javascript" src="%PUBLIC_URL%/js/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+      AOS.init();
+
+      window.onscroll = function () {
+          scrollFunction()
+      };
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+              document.getElementById("header").style.padding = "0px";
+          } else {
+              document.getElementById("header").style.padding = "2rem";
+          }
+      }
+  </script>
+  </body>
+  
+</html>
