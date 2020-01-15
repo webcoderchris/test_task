@@ -78,13 +78,11 @@ class Home  extends Component {
                     </Grid>
                   </Grid>
                   <Grid item xs={6} sm={3} spacing={3} style={{display:"flex", alignItems:"center", justifyContent:"center"}}>
-                  <label style={{fontWeight:"50",fontSize:"100px", color:"rgb(84, 227, 195)" }}>+</label>
+                    <label style={{fontWeight:"50",fontSize:"100px", color:"rgb(84, 227, 195)" }}>{this.state.operator}</label>
                   </Grid>
               <Grid item xs={12}>
               <h1 style={{fontWeight:"50",fontSize:"100px", color:"rgb(84, 227, 195)" }}><b>=</b></h1>
-
               <h1 style={{fontWeight:"50",fontSize:"100px", color:"rgb(84, 227, 195)" }}>{this.state.result}</h1>
-
               </Grid>
               <Grid md={6} justify="center">
                 <select name="operator" onChange={this.onChange} style={{padding:"20px",borderRadius:"5px",margin:"5px",width:"45%"}} xs={6}>
@@ -103,8 +101,6 @@ class Home  extends Component {
             </React.Fragment>
           );
       }
-
-   
   }
  }
 export default withRouter(Home);
